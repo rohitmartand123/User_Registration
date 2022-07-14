@@ -5,7 +5,7 @@ import java.util.Scanner;
  *As a user need to enter valid first name
  */
 public class UserRegistration {
-	 public static void main(String[] args) {
+	  public static void main(String[] args) {
 	        Scanner sc = new Scanner(System.in);
 	        //input first name
 	        System.out.println("Enter first name");
@@ -103,7 +103,7 @@ public class UserRegistration {
 	     * check password is valid or not
 	     */
 	    public static void checkPassword(String password){
-	        boolean isPassword = password.matches("^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9!@#$%&.]{8,}$");
+	        boolean isPassword = password.matches("^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&*()])[a-zA-Z0-9!@#$%&.]{8,}$");
 
 	        if(isPassword){
 	            System.out.println(password + " " + "is valid password");
